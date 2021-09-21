@@ -6,7 +6,7 @@
 
 Although this repository is written in java, we have designed the test such that it does not require any language specific knowledge. No matter what your primary techstack is, you should be able to exercise your debugging skills and fix the root cause.
 
-*Hint: The purpose of this assessment is to see how well you can identify and fix root causes in code. For each challenge, seek to identify the root cause and fix it directly. Workarounds that provide the correct output, but fail to fix the underlying issue, will be marked as zero. Once you have identified the root cause, the actual fix should be short and simple (i.e. no need to write new classes or methods).*
+*Hint: The purpose of this assessment is to see how well you can identify and fix root causes in code. For each challenge, seek to identify the root cause and fix it directly (a fix should be permanent and work for ALL possibilities). Workarounds that provide the correct output, but fail to fix the underlying issue, will be marked as zero. Once you have identified the root cause, the actual fix should be short and simple (i.e. no need to write new classes or methods).*
 
 ### Real Work Analysis
 1. Extracting the **dkl** folder
