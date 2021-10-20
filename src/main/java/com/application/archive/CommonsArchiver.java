@@ -188,6 +188,8 @@ class CommonsArchiver implements Archiver {
      * @throws IOException if an I/O error occurred while creating the file
      */
     protected File createNewArchiveFile(String archive, String extension, File destination) throws IOException {
+        verifyDestinationSource(destination);
+        
         if (!archive.endsWith(extension)) {
             archive += extension;
         }
@@ -198,6 +200,11 @@ class CommonsArchiver implements Archiver {
         return file;
     }
 
+    protected void verifyDestinationSource(File destination) throws IllegalArgumentException {
+        if(!destination.canWrite()){
+            throw new IllegalArgumentException(destination + " is a read only directory.");
+        }
+    }
     /**
      * Recursion entry point for {@link #writeToArchive(File, File[], ArchiveOutputStream)}.
      * <br>
