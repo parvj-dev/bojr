@@ -32,6 +32,7 @@ public final class IOUtils {
         OutputStream output = null;
 
         try {
+            destination.getParentFile().mkdirs();
             output = new FileOutputStream(destination);
             copy(source, output);
         } finally {
